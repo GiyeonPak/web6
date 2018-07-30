@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Gallery</title>
+  </head>
+
+  <style>
+    .wrappaper{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    div{
+      border : powderblue solid 1px;
+    }
+  </style>
+  <script>
+  //  target = document.querySelector('body');
+  //var target = document.querySelector('body');
+  var body = {
+      setColor:function(color){
+        document.querySelector('body').style.color=color;
+      },
+      setBackgroundColor:function(color){
+        document.querySelector('body').style.backgroundColor=color;
+      },
+      listSetColor:function(color){
+        var al = document.querySelectorAll('a');
+        var i = 0;
+        while(i<al.length){
+          al[i].style.color=color;
+          i=i+1;
+        }
+      }
+  }
+
+  function night_day_handler(self){
+    if(self.value==='night'){
+        body.setColor('white');
+        body.setBackgroundColor('black');
+        body.listSetColor('powderblue');
+        self.value = 'day';
+    }else{
+      body.setColor('black');
+      body.setBackgroundColor('white');
+      body.listSetColor('blue');
+      self.value = 'night';
+    }
+
+  }
+
+
+
+  function colors(color){
+
+  }
+  </script>
+
+  <body>
+    <h1 style="text-align:center">Gallery</h1>
+    <div class="wrappaper">
+      <div><a href="index.html" target="_blank">123123<img src="indexPic.jpg" width=450px height="450px"></a></div>
+      <div><a href="Minions.html" target="_blank">asdasd<img src="minion.jpg" width=450px height="450px"></a></div>
+      <div><a href="Sing.html" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/en/b/bb/Sing_%282016_film%29_poster.jpg" width=450px height="450px"></a></div>
+      <div><a href="Secret life of walter mitty.html" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/en/c/cd/The_Secret_Life_of_Walter_Mitty_poster.jpg" width=450px height="450px"></a></div>
+      <div><a href="Click.html" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/en/b/bd/Click_film.jpg" width=450px height="450px"></a></div>
+      <div><input type="button" value="night" onclick="
+          night_day_handler(this);
+        "></div>
+  </body>
+  <!-- var target = document.querySelector('body');
+  if(value==='night'){
+    target.style.color = 'white';
+    target.style.backgroundColor = 'black';
+    this.value = 'day';
+    colors('powderblue');
+
+  }else{
+    target.style.color='black';
+    target.style.backgroundColor = 'white';
+    this.value = 'night';
+    colors('blue');
+
+  } -->
+</html>

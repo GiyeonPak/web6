@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+  <title>MovieRecommendation</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-121652245-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-121652245-1');
+</script>
+
+</head>
+<script src="colors.js"></script>
+
+<body>
+  <H1><a href="index.html">WEB</a></H1>
+  <div id="grid">
+  <ul>
+    <input type="button" value="night" onclick="
+    night_day_handler(this);">
+    <script>
+      var links = ['Minions','Sing','Secret life of walter mitty','Click'];
+    </script>
+      <script>
+      var i = 0;
+      while(i<links.length)
+      {
+        document.write('<li><a href ="'+links[i]+'.html">'+links[i]+'</a></li>');
+        //document.write('<li><a href="http://a.com/'+coworkers[i]+'">'+coworkers[i]+'</a></li>');
+        i = i+1;
+      }
+      </script>
+  </ul>
+<div>
+  <h2>Click</h2>
+<p>
+  <iframe width="854" height="480" src="https://www.youtube.com/embed/3-VfwPpbNg4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</p>
+  <p><a href="https://en.wikipedia.org/wiki/Click_(2006_film)" target="_self" title="Click_Specification">Click</a>
+    <br>is a 2006 American fantasy comedy film directed by Frank Coraci, written by Steve Koren and Mark O'Keefe, and produced by Adam Sandler, who also starred in the lead role. The film co-stars Kate Beckinsale as his wife Donna and Christopher Walken as Morty.
+    Sandler plays Michael Newman, an overworked architect who neglects his family. When he acquires a universal remote that enables him to "fast forward" through unpleasant or outright dull parts of his life, he soon learns that those seemingly bad moments that he skips over contained valuable time with his family and important life lessons. Throughout the story, a man named Morty explains how the remote works and issues warnings.
+    </p>
+    <img src="https://upload.wikimedia.org/wikipedia/en/b/bd/Click_film.jpg" width="30%">
+</div>
+</div>
+    <p>
+
+      <div id="disqus_thread"></div>
+      <script>
+
+      /**
+      *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+      *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+      /*
+      var disqus_config = function () {
+      this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+      };
+      */
+      (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = 'https://movierecommendation1.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+      })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<script id="dsq-count-scr" src="//movierecommendation1.disqus.com/count.js" async></script>
+    </p>
+    <p>
+      <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/5b373c8fe04c852f48c994ca/default';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
+  <!--End of Tawk.to Script-->
+    </p>
+
+
+</body>
+</html>

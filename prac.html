@@ -1,0 +1,104 @@
+
+<html>
+<head>
+  <title>practice</title>
+  <meta charset="utf-8">
+</head>
+
+<body>
+<h1>Loop & Array</h1>
+
+<script>
+ var coworkers = {'giyeon':'leon','naho':'kikuchi'};
+ document.write("giyeon:"+coworkers.giyeon+'<br>');
+ document.write("naho:"+coworkers.naho+'<br>');
+ coworkers.nj = "lj";
+ document.write("nj:"+coworkers.nj+'<br>');
+ coworkers["a midoria"] = "hero";
+ document.write("super midoria:"+coworkers["a midoria"]);
+</script>
+
+<h2> iterate </h2>
+<script>
+  var movie =
+  {
+    "minions":"minion",
+    "click" : "adam sandler",
+    'sing' : 'animals'
+  };
+  for(var key in movie){
+    document.write(key +":"+movie[key]+'<br>');
+  }
+</script>
+
+<h2> property </h2>
+<script>
+
+movie.showAll=function(){
+  for(var key in this){
+    document.write(key+":"+this[key]+'<br>');
+  }
+}
+movie.showAll();
+
+</script>
+
+<script>
+  function sum(left, right)
+  {
+    document.write(left+right);
+  }
+  document.write('<br>');
+  sum(2,3);
+  function sum2(left, right)
+  {
+    return left+right;
+  }
+  sum2(3,5);
+  document.write('<br><div style="color:red">'+sum2(3,5)+'</div>');
+  document.write('<div style="font-size:10rem">'+sum2(3,5)+'</div>');
+  document.write('<div style="color:powderblue">'+"hello"+'</div>');
+  document.write('<div style="color:blue">'+"div style=color:black"+'</div>');
+  function sum3(left, right)
+  {
+    return left+right;
+  }
+  document.write('<div style="color:red">'+sum3(4,3)+'</div>');
+</script>
+
+<ul>
+    <script>
+        document.write('<li>1</li>');
+        document.write('<li>2-1</li>');
+        document.write('<li>2-2</li>');
+        document.write('<li>3</li>');
+    //  var coworkers = ['egoing','leezche','duru','taeho'];
+    </script>
+</ul>
+    <h2>Coworkers</h2>
+      <script>
+    /*    var i = 0;
+        while(i < coworkers.length){
+          document.write('<li><a href="http://a.com/'+coworkers[i]+'">'+coworkers[i]+'</a></li>');
+          i = i + 1;
+        }
+      */
+        var links = ['Minions','Sing','Secret life of walter mitty','Click'];
+    </script>
+      <ul>
+        <script>
+        var i = 0;
+        while(i < links.length)
+       {
+          document.write('<li><a href ="'+links[i]+'.html">'+links[i]+'</a></li>');
+          //document.write('<li><a href="http://a.com/'+coworkers[i]+'">'+coworkers[i]+'</a></li>');
+
+          i = i+1;
+        }
+        </script>
+
+
+
+</ul>
+</body>
+</html>

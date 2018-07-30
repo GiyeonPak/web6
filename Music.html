@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Music Recommendation</title>
+  </head>
+  <script>
+
+  var target = document.querySelector('body');
+  var body = {
+    setColor:function(color){
+      document.querySelector('body').style.color=color;
+    },
+    setBackGroundColor:function(color){
+      document.querySelector('body').style.backgroundColor = color;
+    },
+    setListColor:function(color){
+      var alist = document.querySelectorAll('a');
+      var i = 0;
+      while(i<alist.length)
+      {
+        alist[i].style.color=color;
+        i = i + 1;
+      }
+    }
+  }
+
+
+
+  function night_day_handler(self){
+    if(self.value==='night'){
+      body.setColor('white');
+      body.setBackGroundColor('black');
+      body.setListColor('powderBlue')
+      self.value='day'
+    }else{
+      body.setColor('black');
+      body.setBackGroundColor('white');
+      body.setListColor('blue');
+      self.value='night'
+    }
+  }
+  </script>
+  <style>
+  #grid{
+    display: grid;
+    grid-template-columns: 150px 1fr;
+  }
+  .div1{
+    border-right: 1px solid gray;
+  }
+  ul{
+    padding-left: 10px;
+  }
+
+  </style>
+  <body>
+    <input type="button" value="night" onclick="
+      night_day_handler(this);">
+    <H1 style="text-align:center;"><a href="index.html" >MovieRecommendation</a></H1>
+    <ul>
+      <div id='grid'>
+        <div class='div1'>
+          <script>
+          var li = ['Minions','Sing','Secret life of walter mitty','Click','Gallery'];
+          var i = 0;
+          while(i<li.length){
+            document.write('<li><a href='+li[i]+'.html>'+li[i]+'</a></li>');
+            i=i+1;
+          }
+          </script>
+        </div>
+      <div><iframe src="https://www.youtube.com/embed/kVR_492W32c" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+    </div>
+    </ul>
+  </body>
+</html>
